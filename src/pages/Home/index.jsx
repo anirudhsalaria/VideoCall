@@ -21,7 +21,9 @@ export default function HomePage() {
                 </nav>
             </div>
             {/* ----------------------------------------------------------------------------------------------------------------- */}
-            
+            <div className="container">
+                <textarea name="area" id="myId" cols="30" rows="10"></textarea>
+            </div>
 
         </>
     )
