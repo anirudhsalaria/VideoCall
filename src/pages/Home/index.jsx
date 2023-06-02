@@ -1,6 +1,15 @@
-import React from 'react'
+import React, {useState, useCallback} from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function HomePage() {
+
+    const[value, setValue] = useState();
+    const navigate = useNavigate();
+
+    const handleJoinRoom = useCallback(() => {
+        navigate(`/room/${value}`);
+    }, [navigate, value])
+
     return (
         <>
             {/* ----------------------------------------------------------------------------------------------------------------- */}
@@ -23,6 +32,10 @@ export default function HomePage() {
             </div>
             {/* ----------------------------------------------------------------------------------------------------------------- */}
 
+            <div className="container my-3">
+                <input value={value} onChange={(e) => setValue(e.target.value)} type="text" placeholder='Enter Room Code' />
+                <button className="btn btn-primary my-3 mx-3" onClick={handleJoinRoom}>Join</button>
+            </div>
         </>
     )
 }
