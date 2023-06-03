@@ -32,7 +32,8 @@ export default function HomePage() {
             </div>
             {/* ----------------------------------------------------------------------------------------------------------------- */}
 
-            <div className="container my-3">
+            <div className="container my-3 text-white">
+                <h2>Welcome to OneCamOne</h2>
                 <input value={value} onChange={(e) => setValue(e.target.value)} type="text" placeholder='Enter Room Code' />
                 <button className="btn btn-primary my-3 mx-3" onClick={handleJoinRoom}>Join</button>
             </div>

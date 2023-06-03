@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  background-image: url("https://lovetts.co.uk/wp-content/uploads/2020/03/insolvency-flipped.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* .D9WLyEQaARfWqCTyVrpU{
+  align-self: auto;
+} */
