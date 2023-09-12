@@ -5,8 +5,8 @@ import { ZegoUIKitPrebuilt } from '@zegocloud/zego-uikit-prebuilt';
 export default function RoomPage() {
     const { roomId } = useParams();
     const myMeeting = async (element) => {
-        const appID = 2024793706;
-        const serverSecret = "bf599b5e1f8e1fd4baad2c75bea87aea";
+        const appID = 1207541203;
+        const serverSecret = "b09fab66e7acf186afe6663641d3c28b";
         const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomId, Date.now().toString(), "Anirudh Salaria");
         const zc = ZegoUIKitPrebuilt.create(kitToken);
         zc.joinRoom({
@@ -22,7 +22,7 @@ export default function RoomPage() {
             },
             showScreenSharingButton: true,
         });
-    };
+    }; 
 
     return (
         <div>
